@@ -1,0 +1,524 @@
+<html>
+    <head>
+    <title>BBC-CloneWebpage</title>  
+    <style type="text/css">
+        #topbar { width:1400px;
+                  margin:0 auto;
+                  height:40px;
+                  background-color: white
+                  
+                }
+        
+        body   { margin:0;
+                 padding:0;
+                font-family:  Helvetica, freesans, sans-serif;
+        }
+        
+        
+        #logo   { width:85px;
+                  margin-top:8px;
+                  float:left;
+                  margin-right: 13px;
+                 
+                
+                  
+            }
+        
+        .topbar-section { float:left;
+                          border-left: 1px #CCCCCC solid;
+                          height:100%
+                    }
+    
+        #signin-logo { width:35px;  
+                       margin:6px 13px; 
+                       float:left;
+                           
+        }
+        
+        #signin-text { font-weight:bold;
+                       font-size:90%;
+                       position: relative;
+                       top: 13px;
+                       left:-20px;
+           
+        
+        }
+                        
+        #vertical-line {float:left;
+                       height:100%;
+                       margin-left: 60px;
+            
+        }
+        
+        .contents {font-weight:bold;
+                   padding-top:13px;
+                   padding-left:20px;
+                   padding-right:20px;
+                   height:27px;
+                   font-size:90%;
+            }
+        
+        #More-arrow {width:7px;
+                     float:left;
+                    margin-left:35px;
+                    margin-top:20px;
+                    padding-right:20px;
+                    
+                     
+                     }
+        
+        #search-box {border:none;
+                     background-color:#e6e6e6;
+                     font-weight: bold;
+                     width:150px;
+                    padding:3px 0px 3px 5px;
+                    margin-top: 8px;
+                    margin-left:15px;
+                    float:left;
+            
+            
+            
+            
+        }
+        
+        #magnifying-lens { height:22px;
+                           margin-top:8px;
+        
+        
+        
+        
+        
+        }
+        
+        .clear { clear:both;}
+        
+        #menubar-outer {border: 1px solid #CCCCC;
+                        background-color: #BB1919;
+                        width: 100%;
+                        height:60px;}
+        
+        #menubar { width:1400px;
+                  margin:0 auto;
+            
+            
+        }
+        
+        h1{font-weight:normal;
+           padding:0;
+            margin:0;
+            color:white;
+            font-size:40px;
+            padding-top:10px;
+            }
+         
+        #menubar-outer2 { background-color: #BB1919;
+                        width: 100%;
+                        height:40px;
+        
+            }
+        
+        #menubar2 { width:1400px;
+                  margin:0 auto;}
+        
+        #menubar2 a {color:white;
+                     text-decoration: none;
+                    position: relative;
+                    top: 11px;
+                    font-size:13px;
+                    padding: 0px 10px;
+                    border-right: 1px solid #BB4545;
+        
+            
+        }
+        
+        #menubar2 a:hover { text-decoration:underline; }   
+        .no-border { border:none !important ;}
+        .no-lpad { padding-left:0 !important ;}
+        
+        #down-arrow {height:8px;
+                    position:relative;
+                    top:10px;
+                    left:-8px;}
+        
+        
+        #page-container {width:1400px;
+                  margin:0 auto;
+                                    }
+        h2 {font-weight:normal;
+            margin-top:10px;
+            border-bottom: 3px solid #a91717;
+            width:50px;}
+        
+        h3 a {text-decoration: none;
+              color:black;
+              font-size:28px; }
+        
+        h3 a:hover { color:#1167a8;
+                      text-decoration: underline;
+            
+            }
+        
+        #article-summary {color:#5a5a5a;
+                          width:330px;
+                          }
+        
+        
+        #clock-section {
+            
+            
+            
+        }
+        
+        #clock { height: 17px;
+                margin-right: 7px;
+                float:left;
+                
+        
+        
+        }
+        
+        #clock-content {width: 25px;
+                        border-right: 1px solid #5a5a5a;
+                        margin-right: 10px;
+                        float:left;
+                        
+            
+            
+            
+        }
+        
+                
+        
+        #techno a {text-decoration: none;
+                   color:black;
+            
+        
+        
+        }
+        
+        #techno a:hover {text-decoration: underline;
+                        color:blue;
+            
+    
+                
+            
+            
+            
+        }
+        
+        #article-container {float:left;
+                            width:800px;
+                            border-right: 1px solid #CCCCCC;
+                            padding-bottom: 150px;
+            
+            
+            
+        }
+        
+        #trump-image {width: 420px;
+                      margin-top: 60px;
+                      margin-left: -450px;
+            
+        }
+        
+        #link-container {width:300px;
+            
+            
+            
+        }
+        
+        .link { text-decoration: none;
+                color: black;
+            
+            
+            
+        }
+        
+    
+        #watch {position: relative;
+                top:-300px;
+                width:550px;
+                float:right;
+            
+            
+            
+            
+        }
+    
+        h4 { font-weight: normal;
+             font-size: 20px;
+            
+            
+            
+            
+        }
+        
+        .article-side-image {float:left;
+                            width:140px;
+                           
+            
+                        
+            
+        }
+          
+        .Watch-link {text-decoration:none;
+                     color:black;
+                    font-weight: bold;
+                    font-size:19px;
+            
+            
+            
+            
+        }
+        
+        .Watch-link:hover {color:#1167a8;
+            
+            
+            
+        }
+        
+                
+        .side-content {
+            float:right;
+            width:250px;
+            position: relative;
+            top:-19px;
+            left:-150px;
+            
+            
+        }
+        
+        .clock {width:15px;
+                margin-right: 7px;
+            
+            
+            
+            
+        }
+        
+        #date {font-size: 15px;
+            
+            
+            
+        }
+        
+        
+
+        
+        .topic-link{text-decoration: none;
+                    color:#a91717;
+            
+            
+            
+        }
+        
+    </style>
+    
+    </head>
+
+    <body>
+    <div id="topbar">
+    <img id="logo" src="BBC-Logo-final.PNG">
+    <div id="sign-in" class="topbar-section">
+    <img id="signin-logo" src="Sign-in.PNG">
+    <span id="signin-text">Sign in</span>
+        
+         </div>
+    <div id="vertical-line">
+        
+        
+        </div>
+        
+        <div class="topbar-section contents" > 
+            Home
+        
+        
+        </div>
+        
+         <div class="topbar-section contents" > 
+            News
+        
+        
+        </div>
+        
+         <div class="topbar-section contents" > 
+            Sports
+        
+        
+        </div>
+        
+         <div class="topbar-section contents" > 
+            Reel
+        
+        
+        </div>
+        
+         <div class="topbar-section contents" > 
+            Worklife
+        
+        
+        </div>
+        
+         <div class="topbar-section contents" > 
+            Travel
+        
+        
+        </div>
+        
+         <div class="topbar-section contents" > 
+            Future
+        
+        
+        </div>
+        
+         <div class="topbar-section contents" > 
+            More
+             
+        
+        
+        </div>
+        
+        <div>
+                
+        <img id="More-arrow" src="More-Arrow.PNG">
+        
+        
+        </div>
+        
+        <div class="topbar-section">
+        
+        <input id="search-box" type="text" value="Search">
+        <input type="image" id="magnifying-lens" src="Magnifying-Lens.PNG">
+        
+        </div>
+        
+    </div>
+    
+    <div class="clear"></div>
+    <div id="menubar-outer">
+    <div id="menubar">
+    <h1>NEWS</h1>
+        
+        
+        
+        
+        </div>
+        
+        <div class="clear"</div>
+        
+        <div id="menubar-outer2">
+        <div id="menubar2">
+            <a class="no-lpad" href="">Home</a> 
+            <a href="">Coronavirus</a>
+            <a href="">Video</a>
+            <a href="">World</a>
+            <a href="">Asia</a>
+            <a href="">UK</a>
+            <a href="">Business</a>
+            <a href="">Tech</a>
+            <a href="">Science</a>
+            <a href="">Stories</a>
+            <a href="">Entertainment & Arts</a>
+            <a href="">Health</a>
+            <a href="">World News TV</a>
+            <a href="">In Pictures</a>
+            <a class="no-border" href="">More</a>
+            <img id="down-arrow" src="down-arrow.PNG">
+            
+            
+            
+            </div>
+        
+        
+        
+        </div>
+        
+        
+        
+        
+        
+        
+        </div>
+        
+        <div class="clear"></div>
+        <div id="page-container">
+        <div id="article">
+        <h2>Tech</h2>
+        <div id="article-container">
+        <h3><a href="">Facebook faces delay over Trump ban decision</a></h3> 
+        <div id="article-summary">
+            <p>Facebook's Oversight Board has announced it will announce it's decision "in the coming weeks."</p></div>
+            <img id="clock" src="clock.PNG">
+            <div id="clock-content"> 
+                1h
+                
+                
+                
+                
+                
+                
+            
+            
+            
+            
+            
+            
+            
+            </div>
+            
+            <div id="techno">
+            <a  href="">Technology</a>
+            
+            
+            
+            
+            </div>
+            <div id="link-container">
+            <p><a class="link" href="">Facebook Oversight Board delays decision about Trump's possible return</a></p>
+            <p><a class="link" href="">Mr Trump was banned from Facebook in January after the Capitol Hill riots.</a></p>
+           
+                
+                
+            
+            </div>
+         
+      </div>    
+            <img id="trump-image" src="trump.PNG">
+    </div>
+        
+            <div id="watch">
+            <h4>Watch/Listen</h4>
+            <img class="article-side-image" src="1.PNG">
+            
+            <div class="side-content">
+           <p> <a class="Watch-link" href="">UK Science Chief Backs Blockchains</a></p>
+            <p><img class="clock" src="clock.PNG"</p><span id="date">23 April 2021</span> <a class="topic-link" href="">Technology</a>
+        
+                
+                
+                </div>
+                
+                <div class="clear"></div>
+                 <img class="article-side-image" src="2.PNG">
+            
+            <div class="side-content">
+           <p> <a class="Watch-link" href="">Drone register gives 'accountability'</a></p>
+            <p><img class="clock" src="clock.PNG"</p><span id="date">23 April 2021</span> <a class="topic-link" href="">Technology</a>
+                </div>
+                <div class="clear"></div>
+                 <img class="article-side-image" src="3.PNG">
+            
+            <div class="side-content">
+           <p> <a class="Watch-link" href="">SpaceX rocket explodes during landing</a></p>
+            <p><img class="clock" src="clock.PNG"</p><span id="date">23 April 2021</span> <a class="topic-link" href="">Technology</a>
+        
+                
+                
+                </div>
+            </div>
+            
+            
+    </div>
+    </body>
+
+</html>
